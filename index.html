@@ -36,10 +36,10 @@
                 </nav>
             </div>
             <ul class="desktop-contacts">
-                <li class="menu-ctas-item">
+                <li>
                     <a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="menu-ctas-item">
+                <li>
                     <a class="link contacts" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
             </ul>
@@ -79,7 +79,7 @@
                 <div>
                     <ul class="mobile-links">
                         <li>
-                            <a class="mobile-link mobile-active" href="tel:+110001111111">+11 (000) 111-11-11"</a>
+                            <a class="mobile-link mobile-active" href="tel:+110001111111">+11 (000) 111-11-11</a>
                         </li>
                         <li>
                             <a class="mobile-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -116,7 +116,6 @@
             </nav>
         </div>
     </div>
-
     <!-- end of Mobile Menu-->
 
     <main>
@@ -158,9 +157,9 @@
                             </label>
                             <label for="comment" class="contact-label">
                                 <span class="input-label">Comment</span>
-                                <textarea class="form-label-textarea" rows="8" placeholder="Text input"></textarea>
+                                <textarea class="contact-label-textarea" rows="8" placeholder="Text input"></textarea>
                             </label>
-                            <label for="agree" class="form-agree">
+                            <label for="agree" class="contact-agree">
                                 <input type="checkbox" name="agree" value="agree" class="agree-chkbox">
                                 <svg width="16" height="16" class="agree-chk-icon">
                                     <use href="./images/icons.svg#checkbox"></use>
@@ -179,33 +178,41 @@
             <div class="container">
                 <ul class="list">
                     <li class="about-item">
-                        <svg class="about-icon" width="64px" height="64px">
-                            <use href="./images/icons.svg#antenna-1"></use>
-                        </svg>
+                       <div class="about-icon"> 
+                            <svg width="64px" height="64px">
+                                <use href="./images/icons.svg#antenna-1"></use>
+                            </svg>
+                        </div>
                         <h3>Strategy</h3>
                         <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.
                         </p>
                     </li>
                     <li class="about-item">
-                        <svg class="about-icon" width="64px" height="64px">
-                            <use href="./images/icons.svg#clock-1"></use>
-                        </svg>
+                        <div class="about-icon">
+                            <svg width="64px" height="64px">
+                                <use href="./images/icons.svg#clock-1"></use>
+                            </svg>
+                        </div>
                         <h3>Punctuality</h3>
                         <p>Bring the key message to the brand's audience for the best price within the shortest possible
                             time.</p>
                     </li>
                     <li class="about-item">
-                        <svg class="about-icon" width="64px" height="64px">
-                            <use href="./images/icons.svg#diagram-1"></use>
-                        </svg>
+                        <div class="about-icon">
+                            <svg width="64px" height="64px">
+                                <use href="./images/icons.svg#diagram-1"></use>
+                            </svg>
+                        </div>
                         <h3>Diligence</h3>
                         <p>Research and confirm brands that present the strongest digital growth opportunities and minimize
                             risk.</p>
                     </li>
                     <li class="about-item">
-                        <svg class="about-icon" width="64px" height="64px">
-                            <use href="./images/icons.svg#astronaut-1"></use>
-                        </svg>
+                        <div class="about-icon">
+                            <svg width="64px" height="64px">
+                                <use href="./images/icons.svg#astronaut-1"></use>
+                            </svg>
+                        </div>
                         <h3>Technologies</h3>
                         <p>Design practice focused on digital experiences. We bring forth a deep passion for
                             problem-solving.</p>
@@ -264,146 +271,218 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-item">
+                    <li class="team-item">
                         <img src="images/team card 2.jpg" alt="Tom Ford">
-                        <h3>Tom Ford</h3>
-                        <p>Frontend Developer</p>
-                        <div class="socials">
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#instagram" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#twitter" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#facebook" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#linkedin2" fill="white"></use>
-                            </svg>
+                        <div class="team-caption">
+                            <h3>Tom Ford</h3>
+                            <p>Frontend Developer</p>
+                            <div class="socials">
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#instagram" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#twitter" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#facebook" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#linkedin2" fill="white"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </li>
-                    <li class="card-item">
+                    <li class="team-item">
                         <img src="images/team card 3.jpg" alt="Camila Garcia">
-                        <h3>Camila Garcia</h3>
-                        <p>Marketing</p>
-                        <div class="socials">
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#instagram" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#twitter" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#facebook" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#linkedin2" fill="white"></use>
-                            </svg>
+                        <div class="team-caption">
+                            <h3>Camila Garcia</h3>
+                            <p>Marketing</p>
+                            <div class="socials">
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#instagram" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">   
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#twitter" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#facebook" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#linkedin2" fill="white"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </li>
-                    <li class="card-item">
+                    <li class="team-item">
                         <img src="images/team card 4.jpg" alt="Daniel Wilson">
-                        <h3>Daniel Wilson</h3>
-                        <p>UI Designer</p>
-                        <div class="socials">
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#instagram" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#twitter" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#facebook" fill="white"></use>
-                            </svg>
-                            <svg width="40px" height="40px" viewBox="0 0 400 200">
-                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                                <use href="images/icons.svg#linkedin2" fill="white"></use>
-                            </svg>
+                        <div class="team-caption">
+                            <h3>Daniel Wilson</h3>
+                            <p>UI Designer</p>
+                            <div class="socials">
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#instagram" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#twitter" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#facebook" fill="white"></use>
+                                    </svg>
+                                </a>
+                                <a class="team-socials-icon" href="">
+                                    <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                        <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                        <use href="images/icons.svg#linkedin2" fill="white"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <!-- Clients Section-->
-        <section class="clients">
-            <h2 class="section-title">Customers</h2>
-            <div class="clients-list">
-                <svg class="clients-icon" width="104px" height="56px">
-                    <use href="images/icons.svg#Logo-6"></use>
-                </svg>
-                <svg class="clients-icon" width="104px" height="56px">
-                    <use href="images/icons.svg#Logo-4"></use>
-                </svg>
-                <svg class="clients-icon" width="104px" height="56px">
-                    <use href="images/icons.svg#Logo-5"></use>
-                </svg>
-                <svg class="clients-icon" width="104px" height="56px">
-                    <use href="images/icons.svg#Logo-2"></use>
-                </svg>
-                <svg class="clients-icon" width="104px" height="56px">
-                    <use href="images/icons.svg#Logo"></use>
-                </svg>
-                <svg class="clients-icon" width="104px" height="56px">
-                    <use href="images/icons.svg#Logo-1"></use>
-                </svg>
+        <!-- Customer's Section-->
+        <section class="customers">
+            <div class="container">
+                <h2 class="section-title">Customers</h2>
+                <ul class="list">
+                    <li class="customers-icon">
+                        <a href="#">
+                            <svg width="104px" height="56px">
+                                <use href="images/icons.svg#Logo-6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-icon">
+                        <a href="#">
+                            <svg width="104px" height="56px">
+                                <use href="images/icons.svg#Logo-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-icon">
+                        <a href="#">
+                            <svg width="104px" height="56px">
+                                <use href="images/icons.svg#Logo-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-icon">
+                        <a href="#">
+                            <svg width="104px" height="56px">
+                                <use href="images/icons.svg#Logo-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-icon">
+                        <a href="#">
+                            <svg width="104px" height="56px">
+                                <use href="images/icons.svg#Logo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-icon">
+                        <a href="#">
+                            <svg width="104px" height="56px">
+                                <use href="images/icons.svg#Logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <footer class="bg-dark">
-        <div class="bg-contents">
-            <a href="index.html" class="logo"><span>WEB</span>STUDIO</a>
-            <p>Increase the flow of customers and <br> sales for your business with digital <br> marketing and growth
-                solutions.</p>
-        </div>
-        <div class="bg-socials">
-            <h3>Social Media</h3>
-            <div class="socials">
-                <svg width="40px" height="40px" viewBox="0 0 400 200">
-                    <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                    <use href="images/icons.svg#instagram" fill="white"></use>
-                </svg>
-                <svg width="40px" height="40px" viewBox="0 0 400 200">
-                    <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                    <use href="images/icons.svg#twitter" fill="white"></use>
-                </svg>
-                <svg width="40px" height="40px" viewBox="0 0 400 200">
-                    <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                    <use href="images/icons.svg#facebook" fill="white"></use>
-                </svg>
-                <svg width="40px" height="40px" viewBox="0 0 400 200">
-                    <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
-                    <use href="images/icons.svg#linkedin2" fill="white"></use>
-                </svg>
+    <footer class="bg-dark footer menu-flex">
+        <div class="container">
+            <div class="footer-contents">
+                <div>
+                    <a href="index.html" class="logo link"><span class="logo-web">WEB</span><span class="logo-studio-footer">STUDIO</span></a>
+                    <p>Increase the flow of customers and <br> sales for your business with digital <br> marketing and growth
+                        solutions.</p>
+                </div>
+                <div class="footer-socials">
+                    <h3>Social Media</h3>
+                    <div class="socials">
+                        <a class="team-socials-icon" href="">
+                            <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                <use href="images/icons.svg#instagram" fill="white"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon" href="">    
+                            <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                <use href="images/icons.svg#twitter" fill="white"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon" href="">
+                            <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                <use href="images/icons.svg#facebook" fill="white"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon" href="">
+                            <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                <use href="images/icons.svg#linkedin2" fill="white"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="bg-sub">
-            <h3>Subscribe</h3>
-            <form class="bg-sub-form">
-                <input type="text" class="input-sub" placeholder="Email">
-                <button class="sub-btn">Subscribe
-                    <svg width="24" height="24">
-                        <use href="images/icons.svg#send"></use>
-                    </svg>
-                </button>
-            </form>
+            <div class="footer-sub">
+                <h3>Subscribe</h3>
+                <form>
+                    <input type="text" class="input-sub" placeholder="Email">
+                    <button class="sub-btn">Subscribe
+                        <svg width="24" height="24">
+                            <use href="images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
-    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/mobile-menu.js"></script>
+    <script type="text/javascript" src="./js/modal.js"></script>
 </body>
 
 </html>

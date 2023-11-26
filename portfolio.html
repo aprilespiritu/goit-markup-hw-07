@@ -13,58 +13,121 @@
 </head>
 
 <body>
-    <!-- page menu -->
-    <header class="container">
-        <div class="menu">
-            <a href="index.html" class="logo"><span>WEB</span>STUDIO</a>
-            <ul>
-                <nav class="menu-list">
-                    <li>
-                        <a class="menu-link" href="index.html" target="_self">Studio</a>
-                    </li>
-                    <li>
-                        <a class="menu-link active" href="portfolio.html" target="_self">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="menu-link" href="#" target="_self">Contacts</a>
-                    </li>
+    <!-- Desktop Menu -->
+    <header class="header desktop-nav">
+        <div class="container header-container">
+            <div class="menu-flex">
+                <a href="index.html" class="logo link"><span class="logo-web">WEB</span><span
+                        class="logo-studio">STUDIO</span></a>
+                <nav>
+                    <ul class="list">
+                        <li>
+                            <a class="link menu-link active" href="index.html" target="_self">Studio</a>
+                        </li>
+                        <li>
+                            <a class="link menu-link" href="portfolio.html" target="_self">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="link menu-link" href="#" target="_self">Contacts</a>
+                        </li>
+                    </ul>
                 </nav>
+            </div>
+            <ul class="desktop-contacts">
+                <li>
+                    <a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="link contacts" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
             </ul>
         </div>
-        <ul>
-            <li class="menu-ctas-item">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="menu-ctas-item">
-                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-        </ul>
-    
     </header>
-    <!-- end of page menu-->
+    <!-- end of Desktop Menu-->
 
-    <!-- filter section -->
-    <section class="filter-page">
-        <div class="btn-box">
-            <ul class="filter">
-                <li class="filter-item">
-                    <button type="button" class="filter-btns">All</button>
-                </li>
-                <li class="filter-item">
-                    <button type="button" class="filter-btns">Website</button>
-                </li>
-                <li class="filter-item">
-                    <button type="button" class="filter-btns">App</button>
-                </li>   
-                <li class="filter-item">
-                    <button type="button" class="filter-btns">Design</button>
-                </li>  
-                <li class="filter-item">
-                    <button type="button" class="filter-btns">Marketing</button>
-                </li>
-            </ul> 
+    <!-- Mobile Menu-->
+    <header class="mobile-nav">
+        <div class="container mobile-container">
+            <a href="index.html" class="logo link"><span class="logo-web">WEB</span><span
+                    class="logo-studio">STUDIO</span></a>
+            <svg width="32" height="22" class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <use href="./images/icons.svg#hamburger"></use>
+            </svg>
         </div>
-    </section>
+    </header>
+
+    <div class="js-menu-container mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-container">
+            <button class="js-close-menu">
+                <svg width="18" height="18">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+            <nav class="mobile-navbar">
+                <ul class="mobile-links">
+                    <li>
+                        <a class="mobile-link mobile-active" href="index.html">Studio</a>
+                    </li>
+                    <li>
+                        <a class="mobile-link mobile-active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="mobile-link mobile-active" href="#">Contacts</a>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="mobile-links">
+                        <li>
+                            <a class="mobile-link mobile-active" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li>
+                            <a class="mobile-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <div class="team-socials">
+                        <a class="team-socials-icon">
+                            <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                <use href="images/icons.svg#instagram" fill="white"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon">
+                            <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                <use href="images/icons.svg#twitter" fill="white"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon">
+                            <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                <use href="images/icons.svg#facebook" fill="white"></use>
+                            </svg>
+                        </a>
+                        <a class="team-socials-icon">
+                            <svg width="40px" height="40px" viewBox="0 0 400 200">
+                                <circle r="200" cx="50%" cy="50%" fill="#4D5AE5"></circle>
+                                <use href="images/icons.svg#linkedin2" fill="white"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end of Mobile Menu-->
+
+    <!-- Projects Section -->
+    <main>
+        <section class="projects">
+            <div>
+                <button type="button" class="project-btns">All</button>
+                <button type="button" class="project-btns">Website</button>
+                <button type="button" class="project-btns">App</button>
+                <button type="button" class="project-btns">Design</button>
+                <button type="button" class="project-btns">Marketing</button>
+            </div>
+        </section>
 
     <!-- cards section -->
     <section class="p-page">
@@ -207,6 +270,7 @@
             </li>
         </ul>
     </section>
+    </main>
 
     <footer class="bg-dark">
         <div class="bg-contents">
